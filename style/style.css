@@ -1,0 +1,123 @@
+body {
+  background-color: #6b359c;
+}
+
+body .nav {
+  background-color: #2d084d;
+  border-radius: 13px;
+}
+
+body .nav__brand {
+  color: #8e07a0;
+}
+
+body .nav__link:hover {
+  background-color: #5e13a3;
+  border-radius: 8px;
+}
+
+body .nav__btn {
+  color: white;
+  border: 6px sold white;
+  background-color: #5e13a3;
+}
+
+body .list__head {
+  background-color: #5e13a3;
+  padding: 10px;
+  color: white;
+}
+
+body .list__item {
+  background-color: #2d084d;
+  margin: 2px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+}
+
+body .list__item:hover {
+  background-color: #8d3fd1;
+  margin: 2px;
+  border-radius: 5px;
+  color: white;
+}
+
+body .colStyle {
+  background-color: #2d084d;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+body .colStyle__card {
+  width: 17rem;
+  background-color: black;
+  color: white;
+  margin: 4px;
+  padding: 3px;
+}
+
+body .colStyle__card .card_btn {
+  background-color: #b570f6;
+  color: white;
+}
+
+body .colStyle__card .card_btn:hover {
+  background-color: #ddd2e7;
+  color: black;
+}
+
+body .footer {
+  background-color: #271538;
+  margin-top: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+body .footer__text {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.main {
+  background-color: #22023f;
+  margin-top: 10rem;
+}
+
+.main__header {
+  text-align: center;
+  font-weight: bold;
+  color: #8c39da;
+}
+
+.main__button {
+  background-color: #32164d;
+  border: none;
+  height: 2.7rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.main__ul {
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.main__ul .ul__item {
+  background-color: #7c5a9c;
+  padding: 0.7em;
+  margin: 0.5em;
+  color: white;
+}
+
+.main__ul .ul__item span {
+  text-align: right;
+}
+
+.main .filtered {
+  display: none !important;
+}
+/*# sourceMappingURL=style.css.map */
