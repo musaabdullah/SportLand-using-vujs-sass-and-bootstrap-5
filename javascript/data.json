@@ -1,0 +1,25 @@
+{
+     
+        "productsList": [
+            {"name": "FITNESS"},
+            {"name": "SHOES"},
+            {"name": "CLOTHING"},
+            {"name": "ACCESSORIES"},
+            {"name": "BRANDS"},
+            {"name": "LEISURE SPORTS"}
+        ],
+        "products": [
+                { "name": "Body-Solid EXM3000LPS Multi Gym", "price": "90,000SD", "image": "/resources/IMG.webp" },
+                { "name": "Body-Solid Flat Bench", "price": "40,000SD", "image": "/resources/IMG1.webp" },
+                { "name": "Body-Solid EXM3000LPS Multi Gym", "price": "50,000SD", "image": "/resources/IMG2.webp" },
+                { "name": "Yonex Aerus 3 Mens Badminton Shoes (Black)", "price": "20,000SD", "image": "/resources/IMG22.webp" },
+                { "name": "Victor SH-A930 Indoor Court Shoes (Blue/Silver)", "price": "17,000SD", "image": "/resources/IMG11.webp" },
+                { "name": "Adidas Id Winners CN Womens T-Shirt (Blue)", "price": "10,000SD", "image": "/resources/IMG44.webp" },
+                { "name": "Yonex Womens Round Neck T-Shirt (Lolite-20316)", "price": "11,000SD", "image": "/resources/IMG55.webp" },
+                { "name": "Babolat Microfiber Cap (White)", "price": "6,00SD", "image": "/resources/IMG66.webp" },
+                { "name": "Asics Gel-Torrance 2 Running Shoes (Light Steel/White)", "price": "14,000SD", "image": "/resources/IMG77.webp" }
+                ]
+    
+   
+    
+}
