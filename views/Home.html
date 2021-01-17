@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <div class="container" >
+    <div class="container" id="app">
 
     <nav class="navbar mt-3 navbar-expand-lg nav">
         <div class="container-fluid">
@@ -33,19 +33,21 @@
               <li class="nav-item">
                 <a class="nav-link text-white nav__link" href="#">Accessories</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link text-white nav__link" href="#">Brands</a>
               </li>
-              
+              <li class="nav-item  d-flex"><div class="nav-link text-white nav__link nav__shope"><i class="fa fa-shopping-cart"></i></div><span class="text-white">{{ cartItem }}</span></li>              
+
             </ul>
-            <form class="d-flex">
+            <form class="d-flex ml-5">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn nav__btn" type="submit">Search</button>
             </form>
+
           </div>
         </div>
       </nav>
-        <div class="row mt-4 " id="app">
+        <div class="row mt-4 " >
             <div class="col-md-3 col-lg-3" >
                 <ul class="list-group list">
                     <h4 class="list__head">Products List</h4>
@@ -63,7 +65,7 @@
                             <div class='card-text'>{{ productItem.name }}</div>
                             <div class="text-muat">{{ productItem.price}}</div>
                             <div class="container text-right">
-                                <button class="btn card_btn mt-2 "><i class="fa fa-cart-plus"></i> Add to card</button>
+                                <button @click="addToCart(productItem)" class="btn card_btn mt-2 "><i class="fa fa-cart-plus"></i> Add to card</button>
                             </div>
                         </div>
                     </div>
@@ -83,27 +85,11 @@
     var vm = new Vue({
         el: "#app",
         data: {
-            // productsList: [
-            //     {name: "FITNESS"},
-            //     {name: "SHOES"},
-            //     {name: "CLOTHING"},
-            //     {name: "ACCESSORIES"},
-            //     {name: "BRANDS"},
-            //     {name: "LEISURE SPORTS"},
-            // ],
-            // products: [
-            //         { name: "Body-Solid EXM3000LPS Multi Gym", price: "90,000SD", image: "/resources/IMG.webp" },
-            //         { name: "Body-Solid Flat Bench", price: "40,000SD", image: "/resources/IMG1.webp" },
-            //         { name: "Body-Solid EXM3000LPS Multi Gym", price: "50,000SD", image: "/resources/IMG2.webp" },
-            //         { name: "Yonex Aerus 3 Mens Badminton Shoes (Black)", price: "20,000SD", image: "/resources/IMG22.webp" },
-            //         { name: "Victor SH-A930 Indoor Court Shoes (Blue/Silver)", price: "17,000SD", image: "/resources/IMG11.webp" },
-            //         { name: "Adidas Id Winners CN Womens T-Shirt (Blue)", price: "10,000SD", image: "/resources/IMG44.webp" },
-            //         { name: "Yonex Womens Round Neck T-Shirt (Lolite-20316)", price: "11,000SD", image: "/resources/IMG55.webp" },
-            //         { name: "Babolat Microfiber Cap (White)", price: "6,00SD", image: "/resources/IMG66.webp" },
-            //         { name: "Asics Gel-Torrance 2 Running Shoes (Light Steel/White)", price: "14,000SD", image: "/resources/IMG77.webp" },
-            //         ]
+            
             productsList: [],
-            products: []
+            products: [],
+            cart: [],
+            cartItem: 0,
         },
         mounted: function() {
             axios('/javascript/data.json')
@@ -115,6 +101,12 @@
            
             })
            
+        },
+        methods : {
+            addToCart(product) {
+                this.cart.push(product);
+                this.cartItem++;
+            }
         }
     })
         

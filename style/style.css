@@ -43,6 +43,10 @@ body .list__item:hover {
   color: white;
 }
 
+body .list__shope {
+  margin-left: 100px;
+}
+
 body .colStyle {
   background-color: #2d084d;
   border-radius: 5px;
@@ -78,46 +82,5 @@ body .footer__text {
   color: white;
   font-weight: bold;
   font-size: 20px;
-}
-
-.main {
-  background-color: #22023f;
-  margin-top: 10rem;
-}
-
-.main__header {
-  text-align: center;
-  font-weight: bold;
-  color: #8c39da;
-}
-
-.main__button {
-  background-color: #32164d;
-  border: none;
-  height: 2.7rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.main__ul {
-  list-style: none;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  text-align: left;
-}
-
-.main__ul .ul__item {
-  background-color: #7c5a9c;
-  padding: 0.7em;
-  margin: 0.5em;
-  color: white;
-}
-
-.main__ul .ul__item span {
-  text-align: right;
-}
-
-.main .filtered {
-  display: none !important;
 }
 /*# sourceMappingURL=style.css.map */
