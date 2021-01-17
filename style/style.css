@@ -47,6 +47,10 @@ body .list__shope {
   margin-left: 100px;
 }
 
+body .list__model {
+  background-color: #2d084d;
+}
+
 body .colStyle {
   background-color: #2d084d;
   border-radius: 5px;
