@@ -73,39 +73,4 @@ body {
     }
 }
 
- .main { 
-     background-color: rgb(34, 2, 63);
-     margin-top: 10rem;
-     &__header {
-         text-align: center;
-         font-weight: bold;
-         color: rgb(140, 57, 218);
-     }
-     &__button {
-         background-color:rgb(50, 22, 77);
-         border:none;
-         height: 2.7rem;
-         font-size: 1.2rem;
-         font-weight: bold;
-     }
-    
-     &__ul {
-         list-style: none;
-         margin-top: 1rem;
-         margin-bottom: 1rem;
-         text-align: left;
-         
-         .ul__item {
-             background-color:rgb(124, 90, 156);
-             padding: 0.7em;
-             margin: 0.5em;
-             color: white;
-             span{
-                  text-align: right;
-             }
-         }
-        }
-    .filtered {
-        display: none !important;
-    }
- }
+ 

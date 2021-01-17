@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
+    <title>SportLand | index page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container" >
 
     <nav class="navbar mt-3 navbar-expand-lg nav">
         <div class="container-fluid">
@@ -45,117 +45,33 @@
           </div>
         </div>
       </nav>
-        <div class="row mt-4">
-            <div class="col-md-3 col-lg-3">
+        <div class="row mt-4 " id="app">
+            <div class="col-md-3 col-lg-3" >
                 <ul class="list-group list">
                     <h4 class="list__head">Products List</h4>
-                    <li class="list-group-item list__item">FITNESS</li>
-                    <li class="list-group-item list__item">SHOES</li>
+                    <li v-for="(product,index) in productsList" :key="product.index" class="list-group-item list__item">{{ product.name }}</li>
+                    <!-- <li class="list-group-item list__item">FITNESS</li> -->
+                    <!-- <li class="list-group-item list__item">SHOES</li>
                     <li class="list-group-item list__item">CLOTHING</li>
                     <li class="list-group-item list__item">ACCESSORIES</li>
                     <li class="list-group-item list__item">BRANDS</li>
-                    <li class="list-group-item list__item">LEISURE SPORTS</li>
+                    <li class="list-group-item list__item">LEISURE SPORTS</li> -->
                 </ul>
             </div>
             <div class="col-md-9 inline col-lg-9 ">
               
                 <div class="row  colStyle justify-content-center">
-                    <div class="card colStyle__card "  >
-                        <img src="/resources/IMG.webp" class="card-img-top">
+                   
+                    <div v-for="(productItem,index) in products" :key="productItem.index" class="card colStyle__card "  >
+                        <img :src="productItem.image" class="card-img-top">
                         <div class="card-body colStyle__card__body">
-                            <div class='card-text'>Body-Solid EXM3000LPS Multi Gym</div>
-                            <div class="text-muat">90,000SD</div>
+                            <div class='card-text'>{{ productItem.name }}</div>
+                            <div class="text-muat">{{ productItem.price}}</div>
                             <div class="container text-right">
                                 <button class="btn card_btn mt-2 "><i class="fa fa-cart-plus"></i> Add to card</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card colStyle__card "  >
-                        <img src="/resources/IMG1.webp" class="card-img-top">
-                        <div class="card-body colStyle__card__body">
-                            <div class='card-text'>Body-Solid Flat Bench</div>
-                            <div class="text-muat">40,000SD</div>
-                            <div class="container text-right">
-                                <button class="btn card_btn mt-2 ">Add to card</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card colStyle__card "  >
-                        <img src="/resources/IMG2.webp" class="card-img-top">
-                        <div class="card-body colStyle__card__body">
-                            <div class='card-text'>Body-Solid EXM3000LPS Multi Gym</div>
-                            <div class="text-muat">50,000SD</div>
-                            <div class="container text-right">
-                                <button class="btn card_btn mt-2 ">Add to card</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card colStyle__card "  >
-                        <img src="/resources/IMG22.webp" class="card-img-top">
-                        <div class="card-body colStyle__card__body">
-                            <div class='card-text'>Yonex Aerus 3 Mens Badminton Shoes (Black)</div>
-                            <div class="text-muat">20,000SD</div>
-                            <div class="container text-right">
-                                <button class="btn card_btn mt-2 ">Add to card</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card colStyle__card "  >
-                        <img src="/resources/IMG11.webp" class="card-img-top">
-                        <div class="card-body colStyle__card__body">
-                            <div class='card-text'>Victor SH-A930 Indoor Court Shoes (Blue/Silver)</div>
-                            <div class="text-muat">17,000SD</div>
-                            <div class="container text-right">
-                                <button class="btn card_btn mt-2 ">Add to card</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card colStyle__card "  >
-                        <img src="/resources/IMG44.webp" class="card-img-top">
-                        <div class="card-body colStyle__card__body">
-                            <div class='card-text'>Adidas Id Winners CN Womens T-Shirt (Blue)</div>
-                            <div class="text-muat">10,000SD</div>
-                            <div class="container text-right">
-                                <button class="btn card_btn mt-2 ">Add to card</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card colStyle__card "  >
-                        <img src="/resources/IMG55.webp" class="card-img-top">
-                        <div class="card-body colStyle__card__body">
-                            <div class='card-text'>Yonex Womens Round Neck T-Shirt (Lolite-20316)</div>
-                            <div class="text-muat">11,000SD</div>
-                            <div class="container text-right">
-                                <button class="btn card_btn mt-2 ">Add to card</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card colStyle__card "  >
-                        <img src="/resources/IMG66.webp" class="card-img-top">
-                        <div class="card-body colStyle__card__body">
-                            <div class='card-text'>Babolat Microfiber Cap (White)</div>
-                            <div class="text-muat">6,00SD</div>
-                            <div class="container text-right">
-                                <button class="btn card_btn mt-2 ">Add to card</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card colStyle__card "  >
-                        <img src="/resources/IMG77.webp" class="card-img-top">
-                        <div class="card-body colStyle__card__body">
-                            <div class='card-text'>Asics Gel-Torrance 2 Running Shoes (Light Steel/White)</div>
-                            <div class="text-muat">14,000SD</div>
-                            <div class="container text-right">
-                                <button class="btn card_btn mt-2 ">Add to card</button>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
              
                 
@@ -168,7 +84,35 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0f51093c8b.js" crossorigin="anonymous"></script>
-    <script src="/javascript/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!-- //<script src="/javascript/app.js"></script> -->
+    <script>
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            productsList: [
+                {name: "FITNESS"},
+                {name: "SHOES"},
+                {name: "CLOTHING"},
+                {name: "ACCESSORIES"},
+                {name: "BRANDS"},
+                {name: "LEISURE SPORTS"},
+            ],
+            products: [
+                    { name: "Body-Solid EXM3000LPS Multi Gym", price: "90,000SD", image: "/resources/IMG.webp" },
+                    { name: "Body-Solid Flat Bench", price: "40,000SD", image: "/resources/IMG1.webp" },
+                    { name: "Body-Solid EXM3000LPS Multi Gym", price: "50,000SD", image: "/resources/IMG2.webp" },
+                    { name: "Yonex Aerus 3 Mens Badminton Shoes (Black)", price: "20,000SD", image: "/resources/IMG22.webp" },
+                    { name: "Victor SH-A930 Indoor Court Shoes (Blue/Silver)", price: "17,000SD", image: "/resources/IMG11.webp" },
+                    { name: "Adidas Id Winners CN Womens T-Shirt (Blue)", price: "10,000SD", image: "/resources/IMG44.webp" },
+                    { name: "Yonex Womens Round Neck T-Shirt (Lolite-20316)", price: "11,000SD", image: "/resources/IMG55.webp" },
+                    { name: "Babolat Microfiber Cap (White)", price: "6,00SD", image: "/resources/IMG66.webp" },
+                    { name: "Asics Gel-Torrance 2 Running Shoes (Light Steel/White)", price: "14,000SD", image: "/resources/IMG77.webp" },
+                    ]
+        }
+    })    
+        
+    </script>
 
 </body>
 </html>
